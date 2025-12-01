@@ -1,18 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
-</head>
+  </head>
+  <body>
+    <!-- header start -->
+    <header
+      class="max-w-2xs mx-auto md:max-w-2xl lg:max-w-4xl flex gap-2 items-center py-8"
+    >
+      <div class="flex gap-2">
+        <img src="./images/logo.svg" alt="" />
+        <p class="text-[#70798E] text-xs font-medium hidden md:block">
+          Поставщик продуктов <br />для HoReCa
+        </p>
+      </div>
+      <div
+        class="text-[#203686] lg:flex lg:gap-2 text-sm font-medium hidden lg:block"
+      >
+        <p>Доставка</p>
+        <p>Прайс</p>
+        <p>Производство</p>
+        <p>Оплата</p>
+        <p>Контакты</p>
+        <p>О компании</p>
+      </div>
 
-<body>
-    
-</body>
+      <div class="lg:flex items-center gap-2 hidden lg:block">
+        <div>
+          <i class="fa-brands fa-telegram fa-xl" style="color: #203686"></i>
+          <i
+            class="fa-brands fa-square-whatsapp fa-xl"
+            style="color: #203686"
+          ></i>
+        </div>
+        <div>
+          <h1 class="tetx-lg font-bold text-[#203686]">8 (495) 637-82-28</h1>
+          <p class="text-xs font-semibold text-[#70798E]">заказать звонок</p>
+        </div>
+      </div>
 
+      <div class="lg:hidden">
+        <i
+          class="fa-solid fa-magnifying-glass fa-lg md:fa-xl"
+          style="color: #203686"
+        ></i>
+        <i
+          class="fa-regular fa-circle-user fa-lg md:fa-xl"
+          style="color: #203686"
+        ></i>
+        <i
+          class="fa-regular fa-heart fa-lg md:fa-xl"
+          style="color: #203686"
+        ></i>
+        <i
+          class="fa-solid fa-cart-shopping fa-lg md:fa-xl"
+          style="color: #203686"
+        ></i>
+        <i
+          class="fa-solid fa-list-ul fa-lg md:fa-xl"
+          style="color: #203686"
+        ></i>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- nav start -->
+    <div class="bg-[#203686]">
+      <nav
+        class="text-white lg:flex items-center lg:max-w-4xl mx-auto justify-between py-4 hidden lg:block"
+      >
+        <div class="flex gap-4 items-center">
+          <i
+            class="fa-solid fa-bars-staggered fa-2xl"
+            style="color: #ffffff"
+          ></i>
+          <h1>Каталог товаров</h1>
+        </div>
+        <div>
+          <input
+            class="bg-[white] rounded-xl text-[#70798E] p-2 pr-26"
+            type="text"
+            placeholder="Поиск "
+          />
+        </div>
+        <div class="flex gap-20">
+          <div class="flex items-center">
+            <img src="./images/Frame 1618868303.png" alt="" />
+            <h1 class="font-semibold text-base">Избранное</h1>
+          </div>
+          <div class="flex items-center">
+            <img src="./images/frame_2.png" alt="" />
+            <h1 class="font-semibold text-base">10 000,00 ₽</h1>
+          </div>
+          <div class="items-center">
+            <h1 class="font-semibold text-base">Вход</h1>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- nav end -->
+
+    <!-- banner start -->
+    <div
+      class="bg-[#6BA252] md:flex text-white max-w-2xs mx-auto md:max-w-2xl lg:max-w-4xl justify-between rounded-2xl my-10"
+    >
+      <div class="pl-10 pt-14">
+        <h1 class="font-semibold text-2xl md:text-3xl lg:text-5xl mb-4">
+          > 1000 наименований <br />продуктов питания <br />оптом
+        </h1>
+        <p class="font-medium text-base mb-5">
+          для HoReCa, общепита, <br />производителей
+        </p>
+        <button
+          class="mb-10 font-semibold text-base bg-[#FFED32] rounded-2xl p-2 lg:py-3 lg:px-16 text-[#203686]"
+        >
+          Получить прайс
+        </button>
+      </div>
+      <div class="items-end">
+        <img src="./images/banner.svg" class="" />
+      </div>
+    </div>
+    <!-- banner end -->
+
+    <!-- card start -->
+    <div class="max-w-2xs mx-auto md:max-w-2xl lg:max-w-4xl flex gap-2">
+      <div class="flex bg-white rounded-2xl px-4 pt-4">
+        <div class="">
+          <h1 class="text-[#203686] font-semibold text-2xl mb-3">
+            Чат-бот цен на все наши <br />продукты питания
+          </h1>
+          <div class="flex gap-4">
+            <div>
+              <p class="text-[#203686] font-medium text-sm mb-5">
+                Узнайте наши цены <br />за пару секунд без писем <br />и звонков
+                менеджеру
+              </p>
+              <button
+                class="bg-[#4ADD47] rounded-2xl p-2 text-sm font-semibold text-white flex gap-2 items-center"
+              >
+                <i class="fa-brands fa-whatsapp" style="color: white"></i
+                >WhatsApp
+              </button>
+            </div>
+            <div>
+              <img src="./images/card_1.png" class="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lg:flex gap-2">
+        <div class="bg-white rounded-2xl text-[#203686] px-4 pt-4">
+          <div>
+            <h1 class="font-semibold text-2xl mb-3">Лосось охлажденный</h1>
+          </div>
+          <div class="flex">
+            <div>
+              <p class="font-medium text-sm">
+                Акционная цена <br />1700 ₽ / кг
+              </p>
+            </div>
+            <div>
+              <img src="./images/card_2.svg" alt="" />
+            </div>
+          </div>
+          <button class="bg-[#FFED32] rounded-2xl text-sm font-semibold p-2">
+            до 31.12.2023 г.
+          </button>
+        </div>
+        <div class="bg-white rounded-2xl text-[#203686] px-4 pt-4">
+          <h1 class="font-semibold text-2xl mb-3">Доставка в день заказа</h1>
+          <p class="font-medium text-sm mb-5">Закажите до 11.00</p>
+          <div>
+            <img src="./images/card_3.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- card end -->
+
+    <!-- WORK OF ASLBEK -->
+  </body>
 </html>
